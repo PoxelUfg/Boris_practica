@@ -32,6 +32,7 @@ Examples of unacceptable behavior by participants include:
   professional setting
 
 ## Our Responsibilities
+## Nuestras responsabilidades
 
 Project maintainers are responsible for clarifying the standards of acceptable
 behavior and are expected to take appropriate and fair corrective action in
