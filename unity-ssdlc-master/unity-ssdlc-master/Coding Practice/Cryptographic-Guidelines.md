@@ -85,26 +85,38 @@ All cipher suites below should be compatible with version >= TLS 1.2. SSL is not
 
 When organizing your server's list of ciphers, prioritize AEAD (GCM) modes and PFS (Perfect Forward Secrecy) (ECDHE) cipher suites.  
 
-Accepted TLS Cipher suites:
+# Versiones actualizadas y recomendadas a usar.
+Accepted TLS Cipher Suites (Recommended):
 
 - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+
 - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-- TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
-- TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
-- TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
-- TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+
 - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+
 - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-- TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-- TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-- TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-- TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+
 - TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+
 - TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+
+# Versiones obsoletas, no se recomienda usar.
+Deprecated Cipher Suites Removed (CBC-based ciphers):
+
+- TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+
+- TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+
+- TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+
+- TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+
 - TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+
 - TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-- TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-- TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+
+# Ejemplo de uso de comando OpenSSL para aplicar el cifrado.
+openssl s_server -tls1_2 -cipher 'ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384' -accept 443
 
 ##### Recommended Libraries
 
