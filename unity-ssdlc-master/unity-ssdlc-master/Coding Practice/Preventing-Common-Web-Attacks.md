@@ -14,6 +14,9 @@ This guideline covers how to prevent some common vulnerability classes that can 
 By following the guidelines in this document your application will be more robust against these vulnerability classes and provide a solid foundation for developers to develop secure features for the application.
 
 ## Recommendations
+
+En este documento hay formas buenas de prevenir ataques web
+
 ### Preventing Clickjacking
 ###### Description
 
