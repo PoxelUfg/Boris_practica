@@ -8,6 +8,7 @@ First, please read through our code of conduct, as we expect all our contributor
 Second, before starting on a project that you intend to contribute to the unity-ssldc, we strongly recommend posting on our Issues page and briefly outlining the changes you plan to make. This will enable us to provide some context that may be helpful for you. This could range from advice and feedback on how to optimally perform your changes or reasons for not doing it.
 
 ### Document Style
+### Estilo del Documento
 #### Basics
 - All contributions will be received as PRs - just read the recommendation below first please! 😁
 - This is intended to be a technical reference for other colleagues in the security community, so the language and style should reflect that.
