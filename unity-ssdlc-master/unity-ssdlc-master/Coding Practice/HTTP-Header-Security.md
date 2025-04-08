@@ -1,5 +1,5 @@
 # HTTP Header Security [Coding Practice]
-<font size="-1">_Author: Christian Håland - Dec. 2018_</font>
+<font size="-3">_Author: Christian Håland - Dec. 2018_</font>
 ## Overview
 This document describes the HTTP security headers that we strongly recommend are implemented on all of Unity’s Internet-facing services. https://observatory.mozilla.org can be used to check your site's current headers. The headers are listed in order of importance, but please note that a proper secure Content Security Policy can be difficult to implement unless the application is designed from the beginning with this in mind. 
 
